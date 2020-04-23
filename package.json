@@ -3,18 +3,19 @@
   "version": "0.0.1",
   "description": "A Simple ERC20 token creator",
   "scripts": {
-    "compile": "truffle compile",
+    "compile": "node_modules/.bin/truffle compile",
     "flatten": "bash flatten.sh",
-    "deploy-dev": "truffle migrate --network development",
-    "deploy-ropsten": "truffle migrate --network ropsten",
-    "deploy-fuse": "truffle migrate --network fuse",
-    "deploy-mainnet": "truffle migrate --network mainnet"
+    "deploy-dev": "node_modules/.bin/truffle migrate --network development",
+    "deploy-ropsten": "node_modules/.bin/truffle migrate --network ropsten",
+    "deploy-fuse": "node_modules/.bin/truffle migrate --network fuse",
+    "deploy-mainnet": "node_modules/.bin/truffle migrate --network mainnet"
   },
   "author": "LiorRabin",
   "license": "ISC",
   "dependencies": {
     "dotenv": "^6.2.0",
     "openzeppelin-solidity": "^2.1.1",
+    "truffle": "^5.1.10",
     "truffle-flattener": "^1.2.10",
     "truffle-hdwallet-provider": "^1.0.2"
   }
